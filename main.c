@@ -161,7 +161,18 @@ void main()
 	{
 		GCC_CLRWDT();
 		//_emi = 1;
+		#if 1
 		app();
+		#endif
+		#if 0
+		if(!intF.deviceAddrCmprF)
+			app();
+		else
+		{
+			uart_printf("Device Address is not Matching with Device Address Copy\n");
+			delay(1000);
+		}
+		#endif
 	}
 	
 	

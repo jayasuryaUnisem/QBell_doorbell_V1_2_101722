@@ -72,8 +72,13 @@ void app_pair_status_check()
     #if 1
     uart_printf("Checking Device Address: \n");
     eepromDeviceAddrRead();
-    delay(1);
-    eepromDeviceAddrCpyCheck();
+    // delay(1);
+    // eepromDeviceAddrCpyCheck();
+
+    uart_printf("Device Addr Value: ");
+    uart_printf(intF.deviceID);
+    // uart_printf("\nDevice Addr Cpy Value: ");
+    // uart_printf(intF.deviceAddrCpy);
     #endif
 }
 

@@ -8,7 +8,7 @@ extern int_flags intF;
 
 const unsigned char BC3602_pn9_dataM[5] = 
 {
-	48,1,1,4,8
+	48,1,1,8,8
 };
 
 void Sys_init(void)

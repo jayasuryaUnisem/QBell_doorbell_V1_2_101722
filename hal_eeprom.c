@@ -171,6 +171,7 @@ void eepromUnpairAll(void)
 
 void eepromDeviceAddrCpyCheck(void)
 {
+	#if 0
 	intF.deviceAddCpyAck = eeprom_read(EEPROM_DEVICE_ADDR_CPY_ACK);
 
 	if(EEPROM_DEVICE_ADDR_CPY_ACK_VALUE == intF.deviceAddCpyAck)
@@ -186,6 +187,45 @@ void eepromDeviceAddrCpyCheck(void)
 		eeprom_write(EEPROM_DEVICE_ADDR_CPY_ACK, EEPROM_DEVICE_ADDR_CPY_ACK_VALUE);
 		uart_printf("EEPROM Device Address Copy Write is Done\n");
 	}
+	#endif
+
+	#if 1
+
+	if(0x31 == intF.deviceID[0])
+	{
+		uart_printf("Booting for First time\n");
+		u8 i = 0; 
+		eeprom_write(EEPROM_DEVICE_START_ADDR, 0x30);
+		delay(1);
+		eepromDeviceAddrRead();
+		delay(1);
+		eeprom_write(EEPROM_DEVICE_ADDR_CPY_ACK, EEPROM_DEVICE_ADDR_CPY_ACK_VALUE);
+		delay(1);
+		for (i = EEPROM_DEVICE_ADDR_CPY; i<EEPROM_DEVICE_ADDR_CPY; i++)
+			eeprom_write(i, intF.deviceID[i-EEPROM_DEVICE_ADDR_CPY]);
+		uart_printf("Device Address Copied\n");
+		delay(1);
+		eepromDeviceAddrCpyRead();
+		intF.deviceAddrCmprF = 0;
+	}
+	else 
+	{
+		uart_printf("This Device is already \n");
+		eepromDeviceAddrCpyRead();
+		delay(1);
+		if(!memcmp(intF.deviceID, intF.deviceAddrCpy, sizeof(intF.deviceAddrCpy)))
+		{
+			uart_printf("Address is Matching\n");
+			intF.deviceAddrCmprF = 0;
+		}
+		else
+		{
+			uart_printf("Address is not Matching\n");
+			intF.deviceAddrCmprF = 1;
+		}
+	}
+
+	#endif
 }
 
 void eepromDeviceAddrCpyRead(void)
