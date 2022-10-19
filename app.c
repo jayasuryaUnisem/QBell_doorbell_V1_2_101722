@@ -8,67 +8,6 @@ extern _BC3602_device_ BC3602_T;
 
 void app_pair_status_check()
 {
-    #if 0
-    uart_printf("Device Address: ");
-
-    eepromDeviceAddrRead();
-    delay(10);
-    eepromPstatusCheck();
-    delay(10);
-
-    u8 j;
-    for (j = 0; j < 4; j++)
-        uart_send(intF.deviceID[j]);
-
-    uart_printf("\n");
-    delay(10);
-
-    switch (intF.pairStatus)
-    {
-        u8 i = 0;
-    case NO_DEVICE_FOUND:
-        uart_printf("No Device Paired Yet\n");
-        break;
-
-    case P1_DEVICE_CONN:
-        eepromP1Read();
-        uart_printf("P1 Device Paired: ");
-
-        for (i = 0; i < 4; i++)
-            uart_send(intF.p1DeviceID[i]);
-        uart_printf("\n");
-        break;
-
-    case P2_DEVICE_CONN:
-        eepromP2Read();
-        uart_printf("P2 Device Paired: ");
-
-        for (i = 0; i < 4; i++)
-            uart_send(intF.p2DeviceID[i]);
-        uart_printf("\n");
-        break;
-
-    case BOTH_DEVICE_CONN:
-        eepromP1Read();
-        eepromP2Read();
-        uart_printf("Both the Device are Paired\n");
-        uart_printf("P1 Device ID: ");
-
-        for (i = 0; i < 4; i++)
-            uart_send(intF.p1DeviceID[i]);
-        uart_printf("\nP2 Device ID: ");
-
-        for (i = 0; i < 4; i++)
-            uart_send(intF.p2DeviceID[i]);
-        uart_printf("\n");
-        break;
-
-    default:
-        break;
-    }
-    uart_printf("\n");
-    #endif
-
     #if 1
     uart_printf("Checking Device Address: \n");
     eepromDeviceAddrRead();
@@ -82,82 +21,58 @@ void app_pair_status_check()
     #endif
 }
 
-void app_pair_status_update()
+
+void app_eeprom_addr_check(void)
 {
-    uart_printf("Updating the EEPROM\n");
-    intF.pairingAck = 0;
-    eepromPstatusCheck();
-    delay(10);
-    u8 i = 0;
-    u8 tempArr[5];
-    for (i = 0; i < 4; i++)
-        tempArr[i] = intF.rxPayload[i + 1];
-    switch (intF.pairStatus)
+    uart_printf("Checking Device Address: ");
+    eepromDeviceAddrRead();
+    uart_printf(intF.deviceID);
+    eepromDeviceAddrCpyAckRead();
+    uart_printf("\nDevice Copy Addr Ack: ");
+    uart_send(intF.deviceAddCpyAck);
+    if(EEPROM_DEVICE_ADDR_CPY_ACK_VALUE == intF.deviceAddCpyAck)
     {
-    case NO_DEVICE_FOUND:
-        uart_printf("Writing the ID to the P1 Address: ");
-        eepromP1Write();
-        delay(10);
-        eepromP1Read();
-        delay(10);
-        eepromPstatusWrite(P1_DEVICE_CONN);
-        delay(10);
-        for (i = 0; i < 4; i++)
-            uart_send(intF.p1DeviceID[i]);
-        uart_printf("\n");
-        break;
+        uart_printf("\nThis device address is copied already\n");
+        eepromDeviceAddrCpyRead();
+        uart_printf("Device Address Copy: ");
+        uart_printf(intF.deviceAddrCpy);
+        uart_printf("\nComparing the Address and Address copy\n");
 
-    case P1_DEVICE_CONN:
-        eepromP1Read();
-        delay(10);
-        if (memcmp(tempArr, intF.p1DeviceID, sizeof(intF.p1DeviceID)))
+        if(!memcmp(intF.deviceID, intF.deviceAddrCpy, sizeof(intF.deviceAddrCpy)))
         {
-            uart_printf("Writing the ID to the P2 Address: ");
-            eepromP2Write();
-            delay(10);
-            eepromP2Read();
-            delay(10);
-            eepromPstatusWrite(BOTH_DEVICE_CONN);
-            delay(10);
-            for (i = 0; i < 4; i++)
-                uart_send(intF.p2DeviceID[i]);
-            uart_printf("\n");
+            uart_printf("Address Matching\n");
+            intF.deviceAddrCmprF = 0;
+        }
+        else
+        {
+            uart_printf("Address Not Matching\n");
+            intF.deviceAddrCmprF = 1;
+        }
+    }
+    else
+    {
+        uart_printf("The Device address is not copied yet\nChecking the first boot: ");
+        uart_send(intF.deviceID[0]);
+        if(0x31 == intF.deviceID[0])
+        {
+            uart_printf("Device is boot for first time.");
+            eeprom_write(EEPROM_DEVICE_START_ADDR, DOORBELL);
+            delay(1);
+            eepromDeviceAddrRead();
+            delay(1);
+            eepromDeviceAddrCpyAckWrite(EEPROM_DEVICE_ADDR_CPY_ACK_VALUE);
+            delay(1);
+            eepromDeviceAddrCpyWrite();
+            delay(1);
+            intF.deviceAddrCmprF = 0;
         }
 
         else
         {
-            uart_printf("This device is already paired\n");
+            uart_printf("This Device is not Booting for first time, some other issue\n");
+            intF.deviceAddrCmprF = 1;
         }
 
-        break;
-
-    case P2_DEVICE_CONN:
-        eepromP2Read();
-        if (memcmp(tempArr, intF.p2DeviceID, sizeof(intF.p2DeviceID)))
-        {
-            uart_printf("Writing trhe ID to the P1 Address: ");
-            eepromP1Write();
-            delay(10);
-            eepromP1Read();
-            delay(10);
-            eepromPstatusWrite(BOTH_DEVICE_CONN);
-            delay(10);
-            for (i = 0; i < 4; i++)
-                uart_send(intF.p1DeviceID[i]);
-            uart_printf("\n");
-        }
-        else
-        {
-            uart_printf("This is already Paired with this device\n");
-        }
-        break;
-
-    case BOTH_DEVICE_CONN:
-        uart_printf("P1 and P2 both the address are busy\n");
-        break;
-
-    default:
-        break;
     }
 }
 
@@ -286,17 +201,6 @@ void app()
 #endif
     RF_Finished_Process(&BC3602_T);
 #endif
-}
-
-void unpairSpNode()
-{
-    u8 tempAddr[5];
-    u8 i = 0;
-    for (i = 0; i < 4; i++)
-        tempAddr[i] = intF.rxPayload[i + 1];
-    uart_printf("Unprint the specfice Node: ");
-    uart_printf((char *)tempAddr);
-    uart_printf("\n");
 }
 
 void rgb_blink(u8 color)

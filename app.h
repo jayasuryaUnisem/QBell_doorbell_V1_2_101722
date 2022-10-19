@@ -19,12 +19,11 @@
 #define MASTER_2                            0x50
 
 extern void app_pair_status_check();
-extern void app_pair_status_update();
-extern void app_pair_status_upadte2();
+extern void app_eeprom_addr_check(void);
 extern void app();
-extern void unpairSpNode();
 extern void LED(u8 mode);
 extern void rgb_blink(u8 color);
 extern void initSys(void);
+
 
 #endif

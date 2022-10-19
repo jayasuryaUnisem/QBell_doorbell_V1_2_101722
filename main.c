@@ -151,7 +151,8 @@ void main()
 	GCC_CLRWDT(); 
 	delay(10);
 	
-	app_pair_status_check();
+	//app_pair_status_check();
+	app_eeprom_addr_check();
 	delay(10);
 
 	_pb4 = 0;
@@ -161,15 +162,16 @@ void main()
 	{
 		GCC_CLRWDT();
 		//_emi = 1;
-		#if 1
+		#if 0
 		app();
 		#endif
-		#if 0
+		#if 1
 		if(!intF.deviceAddrCmprF)
 			app();
 		else
 		{
 			uart_printf("Device Address is not Matching with Device Address Copy\n");
+			rgb_blink(BLUE);
 			delay(1000);
 		}
 		#endif
