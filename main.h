@@ -41,8 +41,7 @@ typedef struct int_flags
 
     unsigned char deviceAddCpyAck;
     unsigned char deviceAddrCpy[5];
-    unsigned char deviceAddrCRC;
-    unsigned char deviceAddrCpyCRC;
+    unsigned char deviceAddrCmprF;
 
     unsigned char lvdF;
     unsigned char mode3V3F;

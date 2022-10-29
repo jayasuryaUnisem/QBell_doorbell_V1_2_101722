@@ -116,77 +116,6 @@ void eepromDeviceAddrRead()
 		intF.deviceID[i] = eeprom_read(i);
 }
 
-void eepromP1Read()
-{
-	u8 i = 0;
-	for(i = EEPROM_P1_DEVICE_START_ADDR; i<EEPROM_P1_DEVICE_START_ADDR+4; i++)
-		intF.p1DeviceID[i-EEPROM_P1_DEVICE_START_ADDR] = eeprom_read(i);
-}
-
-void eepromP2Read()
-{
-	u8 i = 0;
-	for(i = EEPROM_P2_DEVICE_START_ADDR; i<EEPROM_P2_DEVICE_START_ADDR+4; i++)
-		intF.p2DeviceID[i-EEPROM_P2_DEVICE_START_ADDR] = eeprom_read(i);
-}
-
-void eepromP1Write()
-{
-	u8 i = 0;
-	for(i = 0;i<4;i++)
-		intF.p1DeviceID[i] = intF.rxPayload[i+1];
-
-	for(i = EEPROM_P1_DEVICE_START_ADDR; i<EEPROM_P1_DEVICE_START_ADDR+4; i++)
-		eeprom_write(i, intF.p1DeviceID[i-EEPROM_P1_DEVICE_START_ADDR]);
-}
-
-void eepromP2Write()
-{
-	u8 i = 0;
-	for(i = 0;i<4;i++)
-		intF.p2DeviceID[i] = intF.rxPayload[i+1];
-
-	for(i = EEPROM_P2_DEVICE_START_ADDR; i<EEPROM_P2_DEVICE_START_ADDR+4; i++)
-		eeprom_write(i, intF.p2DeviceID[i-EEPROM_P2_DEVICE_START_ADDR]);
-}
-
-void eepromPstatusCheck()
-{
-	intF.pairStatus = eeprom_read(EEPROM_PAIRED_STATUS_ADDR);
-}
-
-void eepromPstatusWrite(u8 payload)
-{
-	eeprom_write(EEPROM_PAIRED_STATUS_ADDR, payload);
-}
-
-void eepromUnpairAll(void)
-{
-	u8 i = 0;
-	for(i = EEPROM_P1_DEVICE_START_ADDR; i<EEPROM_P1_DEVICE_START_ADDR+10; i++)
-	{
-		eeprom_write(i, 0);
-	}
-}
-
-void eepromDeviceAddrCpyCheck(void)
-{
-	intF.deviceAddCpyAck = eeprom_read(EEPROM_DEVICE_ADDR_CPY_ACK);
-
-	if(EEPROM_DEVICE_ADDR_CPY_ACK_VALUE == intF.deviceAddCpyAck)
-	{
-		uart_printf("Address is stored in the EEPROM already\n");
-	}
-	else
-	{
-		u8 i = 0;
-		for (i = EEPROM_DEVICE_ADDR_CPY; i<EEPROM_DEVICE_ADDR_CPY+4; i++)
-			eeprom_write(i, intF.deviceID[i-EEPROM_DEVICE_ADDR_CPY]);
-		delay(1);
-		eeprom_write(EEPROM_DEVICE_ADDR_CPY_ACK, EEPROM_DEVICE_ADDR_CPY_ACK_VALUE);
-		uart_printf("EEPROM Device Address Copy Write is Done\n");
-	}
-}
 
 void eepromDeviceAddrCpyRead(void)
 {
@@ -194,4 +123,24 @@ void eepromDeviceAddrCpyRead(void)
 	for(i = EEPROM_DEVICE_ADDR_CPY; i<EEPROM_DEVICE_ADDR_CPY+4; i++)
 		intF.deviceAddrCpy[i-EEPROM_DEVICE_ADDR_CPY] = eeprom_read(i);
 	uart_printf("EEPROM Device Address Copy Read Done\n");
+}
+
+u8 eepromDeviceAddrCpyAckRead(void)
+{
+	intF.deviceAddCpyAck = eeprom_read(EEPROM_DEVICE_ADDR_CPY_ACK);
+	return intF.deviceAddCpyAck;
+}
+
+void eepromDeviceAddrCpyWrite(void)
+{
+	u8 i = 0;
+	for (i = EEPROM_DEVICE_ADDR_CPY; i<EEPROM_DEVICE_ADDR_CPY+5; i++)
+		eeprom_write(i, intF.deviceID[i-EEPROM_DEVICE_ADDR_CPY]);
+	uart_printf("EEPROM Device Address Copy Write Done\n");
+}
+
+void eepromDeviceAddrCpyAckWrite(u8 byteValue)
+{
+	eeprom_write(EEPROM_DEVICE_ADDR_CPY_ACK, byteValue);
+	uart_printf("EEPROM Device Address Copy Ack Write Done\n");
 }

@@ -31,137 +31,131 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     0020h     0023h    0004h      CODE               _IIC_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
      00h     0024h     0027h    0004h      CODE               @INT1_proc_code (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
      00h     0028h     0048h    0021h      CODE               @start (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     00h     0049h     0060h    0018h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     00h     0061h     0076h    0016h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0077h     009ah    0024h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     009bh     00f7h    005dh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     00f8h     01b6h    00bfh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     01b7h     01f3h    003dh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     01f4h     02e0h    00edh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     02e1h     0362h    0082h      CODE               _convert_integer_to_string (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     00h     0363h     0378h    0016h      CODE               _delay (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     00h     0379h     0399h    0021h      CODE               _main (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     00h     039ah     03ebh    0052h      CODE               _adc_selectChannel (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     03ech     0403h    0018h      CODE               _adc_getValue (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0404h     0416h    0013h      CODE               _adc_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0417h     041eh    0008h      CODE               _lvd_read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     041fh     0445h    0027h      CODE               _lvd_mode_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0446h     0468h    0023h      CODE               _lvd_read_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0469h     0511h    00a9h      CODE               _itoa (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0512h     0518h    0007h      CODE               _uart_int_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0519h     0526h    000eh      CODE               _uart_prot_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0527h     052eh    0008h      CODE               _uart_send (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     052fh     0534h    0006h      CODE               _uart_receive (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0535h     0543h    000fh      CODE               _uart_printf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0544h     055fh    001ch      CODE               _uart_int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     00h     0560h     0570h    0011h      CODE               _gpio_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     0571h     057bh    000bh      CODE               _int_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     057ch     0598h    001dh      CODE               _rgb_led_ctrl (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     0599h     059eh    0006h      CODE               _INT0_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     059fh     05a4h    0006h      CODE               _INT1_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     05a5h     05b4h    0010h      CODE               _IIC_Start (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     05b5h     05c1h    000dh      CODE               _IIC_Stop (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     05c2h     05e7h    0026h      CODE               _Wr_Byte (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     05e8h     0603h    001ch      CODE               _Rd_Byte (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     0604h     061ah    0017h      CODE               _checkAck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     061bh     0630h    0016h      CODE               _WriteI2C_Int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     00h     0631h     064ch    001ch      CODE               _ktd_en (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     064dh     06b9h    006dh      CODE               _ktd_clear (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     06bah     0760h    00a7h      CODE               _ktd_rgb_ctrl (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     0761h     0807h    00a7h      CODE               _ktd_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     0808h     089bh    0094h      CODE               _ktd_clockwise_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     089ch     092fh    0094h      CODE               _ktd_anticlockwise_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
-     00h     0930h     093ah    000bh      CODE               _SpiWriteRegCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     093bh     0940h    0006h      CODE               _SpiWriteStrobeCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0941h     094ch    000ch      CODE               _SpiReadRegCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     094dh     0961h    0015h      CODE               _RFWriteBuf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0962h     097dh    001ch      CODE               _RFWriteBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     097eh     0998h    001bh      CODE               _RFReadBuf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0999h     09b6h    001eh      CODE               _RFReadBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     09b7h     09d1h    001bh      CODE               _WriteFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     09d2h     09eeh    001dh      CODE               _ReadFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     09efh     09f7h    0009h      CODE               _RFEnATR (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     09f8h     0a00h    0009h      CODE               _RFDisATR (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0a01h     0a06h    0006h      CODE               _RFXtalReady (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0a07h     0a19h    0013h      CODE               _ResetLvRF (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0a1ah     0aa8h    008fh      CODE               _BC3602_Config (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0aa9h     0abdh    0015h      CODE               _RFWriteSyncword (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0abeh     0b06h    0049h      CODE               _RFSetDRPram (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b07h     0b2bh    0025h      CODE               _RFWriteFreqTABLE (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b2ch     0b59h    002eh      CODE               _RFWriteFreq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b5ah     0b77h    001eh      CODE               _RFSetPower (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b78h     0b85h    000eh      CODE               _RFCalibration (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b86h     0b8dh    0008h      CODE               _RFGetClrRFIrq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b8eh     0b90h    0003h      CODE               _ResetTXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b91h     0b93h    0003h      CODE               _ResetRXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b94h     0b96h    0003h      CODE               _EntryLightSleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b97h     0b99h    0003h      CODE               _EntryDeepSleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b9ah     0b9ch    0003h      CODE               _EntryIdleMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0b9dh     0baah    000eh      CODE               _LircCalibration (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0babh     0bc2h    0018h      CODE               _RF_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0bc3h     0be7h    0025h      CODE               _RF_TxCarrier (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0be8h     0c17h    0030h      CODE               _RF_RxBER (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c18h     0c2fh    0018h      CODE               _RF_WriteFreq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c30h     0c38h    0009h      CODE               _RF_SetSniffPrm (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c39h     0c41h    0009h      CODE               _RF_SetAddr (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c42h     0c4fh    000eh      CODE               _RF_EntryRxMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c50h     0c62h    0013h      CODE               _RF_EntrySniffMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c63h     0c73h    0011h      CODE               _RF_EntryWOT_Mode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c74h     0c88h    0015h      CODE               _RF_SendData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c89h     0c8eh    0006h      CODE               _RF_ResendData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c8fh     0c98h    000ah      CODE               _RF_ReadRxData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c99h     0c9dh    0005h      CODE               _RFReadRssi (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0c9eh     0cb0h    0013h      CODE               _Extend_FIFO_Enable (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0cb1h     0cc1h    0011h      CODE               _Extend_FIFO_Disable (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0cc2h     0cd2h    0011h      CODE               _RFEnARK (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0cd3h     0cdbh    0009h      CODE               _RFDisARK (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0cdch     0d21h    0046h      CODE               _CRC16_CCITT_FALSE (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0d22h     0d60h    003fh      CODE               _RF_Parameter_loading (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     00h     0d61h     0e63h    0103h      CODE               _ExtendFIFO_TX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     00h     0e64h     0fcfh    016ch      CODE               _ExtendFIFO_RX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     00h     0fd0h     0fdfh    0010h      CODE               _SpiIOInti (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
-     00h     0fe0h     0fe1h    0002h      CODE               _SpiCSN_low (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
-     00h     0fe2h     0fe3h    0002h      CODE               _SpiCSN_high (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
-     00h     0fe4h     0feeh    000bh      CODE               _SpiRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
-     00h     0fefh     0ff8h    000ah      CODE               _SpiWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
-     00h     0ff9h     100bh    0013h      CODE               _fun_RamInit (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     100ch     1025h    001ah      CODE               _Sys_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     1026h     102bh    0006h      CODE               _RF_Process_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     102ch     1105h    00dah      CODE               _RF_Finished_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     1106h     113bh    0036h      CODE               _DATA_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     113ch     117fh    0044h      CODE               _KEY_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     1180h     118eh    000fh      CODE               _RF_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     118fh     1196h    0008h      CODE               _System_deepsleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     1197h     119bh    0005h      CODE               _TB0_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     119ch     119fh    0004h      CODE               _eeprom_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     11a0h     11b6h    0017h      CODE               _eeprom_write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     11b7h     11d2h    001ch      CODE               _eeprom_read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     11d3h     11e4h    0012h      CODE               _eepromDeviceAddrRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     11e5h     11f7h    0013h      CODE               _eepromP1Read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     11f8h     120ah    0013h      CODE               _eepromP2Read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     120bh     1224h    001ah      CODE               _eepromP1Write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     1225h     123eh    001ah      CODE               _eepromP2Write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     123fh     1244h    0006h      CODE               _eepromPstatusCheck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     1245h     124ah    0006h      CODE               _eepromPstatusWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     124bh     1255h    000bh      CODE               _eepromUnpairAll (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     1256h     1282h    002dh      CODE               _eepromDeviceAddrCpyCheck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     1283h     129ah    0018h      CODE               _eepromDeviceAddrCpyRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     129bh     12a6h    000ch      CODE               _app_pair_status_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     12a7h     136eh    00c8h      CODE               _app_pair_status_update (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     136fh     1386h    0018h      CODE               _unpairSpNode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     1387h     13a0h    001ah      CODE               _rgb_blink (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     13a1h     13bdh    001dh      CODE               _LED (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     13beh     148ah    00cdh      CODE               _app (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     148bh     1499h    000fh      CODE               _initSys (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     149ah     14d0h    0037h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     14d1h     14e3h    0013h      CODE               _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     14e4h     14edh    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     14eeh     1515h    0028h      CODE               _memcpy (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     1516h     1549h    0034h      CODE               _memcmp (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     154ah     1559h    0010h      CODE               _CROM2PROM (CROM2PROM)
-     00h     0080h     0080h    0001h      DATA     242       @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0081h     0081h    0001h      DATA     153       @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0082h     0082h    0001h      DATA     143       @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0049h     007ch    0034h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     007dh     0092h    0016h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     0093h     00b6h    0024h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     00b7h     0113h    005dh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0114h     01d2h    00bfh      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     01d3h     020eh    003ch      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     020fh     0312h    0104h      CODE               @crom (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     0313h     0394h    0082h      CODE               _convert_integer_to_string (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     0395h     03aah    0016h      CODE               _delay (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     03abh     03dbh    0031h      CODE               _main (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     03dch     042dh    0052h      CODE               _adc_selectChannel (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     042eh     0445h    0018h      CODE               _adc_getValue (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     0446h     0458h    0013h      CODE               _adc_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     0459h     0463h    000bh      CODE               _lvd_read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     0464h     048ah    0027h      CODE               _lvd_mode_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     048bh     04b3h    0029h      CODE               _lvd_read_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
+     00h     04b4h     055ch    00a9h      CODE               _itoa (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     055dh     0563h    0007h      CODE               _uart_int_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     0564h     0571h    000eh      CODE               _uart_prot_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     0572h     0579h    0008h      CODE               _uart_send (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     057ah     057fh    0006h      CODE               _uart_receive (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     0580h     058eh    000fh      CODE               _uart_printf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     058fh     05aah    001ch      CODE               _uart_int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     05abh     05bbh    0011h      CODE               _gpio_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     00h     05bch     05c6h    000bh      CODE               _int_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     00h     05c7h     05e3h    001dh      CODE               _rgb_led_ctrl (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     00h     05e4h     05eah    0007h      CODE               _INT0_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     00h     05ebh     05f1h    0007h      CODE               _INT1_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     00h     05f2h     0601h    0010h      CODE               _IIC_Start (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     0602h     060eh    000dh      CODE               _IIC_Stop (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     060fh     0634h    0026h      CODE               _Wr_Byte (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     0635h     0650h    001ch      CODE               _Rd_Byte (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     0651h     0667h    0017h      CODE               _checkAck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     0668h     067dh    0016h      CODE               _WriteI2C_Int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     067eh     0699h    001ch      CODE               _ktd_en (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     069ah     0706h    006dh      CODE               _ktd_clear (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     0707h     07adh    00a7h      CODE               _ktd_rgb_ctrl (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     07aeh     0854h    00a7h      CODE               _ktd_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     0855h     08e8h    0094h      CODE               _ktd_clockwise_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     08e9h     097ch    0094h      CODE               _ktd_anticlockwise_ring (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
+     00h     097dh     0987h    000bh      CODE               _SpiWriteRegCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0988h     098dh    0006h      CODE               _SpiWriteStrobeCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     098eh     0999h    000ch      CODE               _SpiReadRegCMD (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     099ah     09aeh    0015h      CODE               _RFWriteBuf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     09afh     09cah    001ch      CODE               _RFWriteBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     09cbh     09e5h    001bh      CODE               _RFReadBuf (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     09e6h     0a03h    001eh      CODE               _RFReadBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a04h     0a1eh    001bh      CODE               _WriteFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a1fh     0a3bh    001dh      CODE               _ReadFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a3ch     0a44h    0009h      CODE               _RFEnATR (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a45h     0a4dh    0009h      CODE               _RFDisATR (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a4eh     0a53h    0006h      CODE               _RFXtalReady (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a54h     0a66h    0013h      CODE               _ResetLvRF (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0a67h     0af5h    008fh      CODE               _BC3602_Config (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0af6h     0b06h    0011h      CODE               _RFWriteSyncword (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0b07h     0b4fh    0049h      CODE               _RFSetDRPram (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0b50h     0b74h    0025h      CODE               _RFWriteFreqTABLE (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0b75h     0ba2h    002eh      CODE               _RFWriteFreq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0ba3h     0bc0h    001eh      CODE               _RFSetPower (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bc1h     0bceh    000eh      CODE               _RFCalibration (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bcfh     0bd6h    0008h      CODE               _RFGetClrRFIrq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bd7h     0bd9h    0003h      CODE               _ResetTXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bdah     0bdch    0003h      CODE               _ResetRXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bddh     0bdfh    0003h      CODE               _EntryLightSleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0be0h     0be2h    0003h      CODE               _EntryDeepSleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0be3h     0be5h    0003h      CODE               _EntryIdleMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0be6h     0bf3h    000eh      CODE               _LircCalibration (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0bf4h     0c0bh    0018h      CODE               _RF_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c0ch     0c30h    0025h      CODE               _RF_TxCarrier (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c31h     0c60h    0030h      CODE               _RF_RxBER (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c61h     0c78h    0018h      CODE               _RF_WriteFreq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c79h     0c81h    0009h      CODE               _RF_SetSniffPrm (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c82h     0c8ah    0009h      CODE               _RF_SetAddr (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c8bh     0c98h    000eh      CODE               _RF_EntryRxMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0c99h     0cabh    0013h      CODE               _RF_EntrySniffMode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0cach     0cbch    0011h      CODE               _RF_EntryWOT_Mode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0cbdh     0cd1h    0015h      CODE               _RF_SendData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0cd2h     0cd7h    0006h      CODE               _RF_ResendData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0cd8h     0ce1h    000ah      CODE               _RF_ReadRxData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0ce2h     0ce6h    0005h      CODE               _RFReadRssi (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0ce7h     0cf9h    0013h      CODE               _Extend_FIFO_Enable (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0cfah     0d0ah    0011h      CODE               _Extend_FIFO_Disable (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0d0bh     0d1bh    0011h      CODE               _RFEnARK (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0d1ch     0d24h    0009h      CODE               _RFDisARK (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0d25h     0d6ah    0046h      CODE               _CRC16_CCITT_FALSE (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     0d6bh     0da9h    003fh      CODE               _RF_Parameter_loading (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     00h     0daah     0each    0103h      CODE               _ExtendFIFO_TX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     00h     0eadh     1018h    016ch      CODE               _ExtendFIFO_RX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     00h     1019h     1028h    0010h      CODE               _SpiIOInti (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
+     00h     1029h     102ah    0002h      CODE               _SpiCSN_low (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
+     00h     102bh     102ch    0002h      CODE               _SpiCSN_high (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
+     00h     102dh     1037h    000bh      CODE               _SpiRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
+     00h     1038h     1041h    000ah      CODE               _SpiWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\SPI.OBJ)
+     00h     1042h     1054h    0013h      CODE               _fun_RamInit (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     1055h     106eh    001ah      CODE               _Sys_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     106fh     1074h    0006h      CODE               _RF_Process_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     1075h     114dh    00d9h      CODE               _RF_Finished_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     114eh     1177h    002ah      CODE               _DATA_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     1178h     11bbh    0044h      CODE               _KEY_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     11bch     11cbh    0010h      CODE               _RF_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     11cch     11d3h    0008h      CODE               _System_deepsleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     11d4h     11d8h    0005h      CODE               _TB0_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     11d9h     11dch    0004h      CODE               _eeprom_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     11ddh     11f3h    0017h      CODE               _eeprom_write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     11f4h     120fh    001ch      CODE               _eeprom_read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     1210h     1221h    0012h      CODE               _eepromDeviceAddrRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     1222h     1239h    0018h      CODE               _eepromDeviceAddrCpyRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     123ah     1241h    0008h      CODE               _eepromDeviceAddrCpyAckRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     1242h     1258h    0017h      CODE               _eepromDeviceAddrCpyWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     1259h     1263h    000bh      CODE               _eepromDeviceAddrCpyAckWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     1264h     1274h    0011h      CODE               _app_pair_status_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     1275h     12f3h    007fh      CODE               _app_eeprom_addr_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     12f4h     130dh    001ah      CODE               _rgb_blink (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     130eh     132eh    0021h      CODE               _LED (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     132fh     13e0h    00b2h      CODE               _app (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     13e1h     13efh    000fh      CODE               _initSys (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     13f0h     1426h    0037h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     1427h     1439h    0013h      CODE               _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     143ah     1443h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     1444h     146bh    0028h      CODE               _memcpy (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
+     00h     146ch     149fh    0034h      CODE               _memcmp (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
+     00h     14a0h     14afh    0010h      CODE               _CROM2PROM (CROM2PROM)
+     00h     0080h     0080h    0001h      DATA     234       @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0081h     0081h    0001h      DATA     151       @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0082h     0082h    0001h      DATA     142       @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
      00h     0083h     0083h    0001h      DATA     61        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
      00h     0084h     0084h    0001h      DATA     46        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
      00h     0085h     0085h    0001h      DATA     13        @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
@@ -181,20 +175,20 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     00b1h     00b2h    0002h      DATA     3         @HCCINIT0_temPtr (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
      00h     00b3h     00b3h    0001h      DATA     2         @HCCINIT0_ExtRxLength (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     00b4h     00b8h    0005h      DATA     1.8       @HCCINIT0_Mflag (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     00b9h     00e5h    002dh      DATA     1.3556    @HCCINIT0_intF (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
-     00h     00e6h     00feh    0019h      DATA     1.24      @HCCINIT0_BC3602_T (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     00h     00ffh     00ffh    0001h      DATA     0         @HCCINIT0_ReceiveData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
-     01h     0080h     0083h    0004h      DATA     1         @HCCINIT0_mRFSync (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     01h     0084h     00e3h    0060h      DATA     0.0833    @HCCINIT0_RF_TXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     01h     00e4h     00e5h    0002h      DATA     0         @HCCINIT0_ADC_Value (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     01h     00e6h     00e7h    0002h      DATA     0         @HCCINIT0_a (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
-     01h     00e8h     00e8h    0001h      DATA     0         @HCCINIT0_u8_IIC_Count (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     01h     00e9h     00e9h    0001h      DATA     0         @HCCINIT0_u8_I2c_WrRd_1ms (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     01h     00eah     00eah    0001h      DATA     0         @HCCINIT0_Rx_Buff (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
-     01h     00ebh     00ebh    0001h      DATA     0         @HCCINIT0_RF_IRQ (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     01h     00ech     00efh    0004h      DATA     0         @HCCINIT0_syncword (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     01h     00f0h     00f1h    0002h      DATA     0         @HCCINIT0_Resent_Count (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     02h     0080h     00dfh    0060h      DATA     0.0312    @HCCINIT0_RF_RXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     00b9h     00d1h    0019h      DATA     1.24      @HCCINIT0_BC3602_T (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     00h     00d2h     00d5h    0004h      DATA     1         @HCCINIT0_mRFSync (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     00d6h     00d7h    0002h      DATA     0         @HCCINIT0_ADC_Value (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     00d8h     00d9h    0002h      DATA     0         @HCCINIT0_a (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     00dah     00dah    0001h      DATA     0         @HCCINIT0_ReceiveData (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
+     00h     00dbh     00dbh    0001h      DATA     0         @HCCINIT0_u8_IIC_Count (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     00dch     00dch    0001h      DATA     0         @HCCINIT0_u8_I2c_WrRd_1ms (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     00ddh     00ddh    0001h      DATA     0         @HCCINIT0_Rx_Buff (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
+     00h     00deh     00deh    0001h      DATA     0         @HCCINIT0_RF_IRQ (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     00h     00dfh     00e2h    0004h      DATA     0         @HCCINIT0_syncword (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     00h     00e3h     00e4h    0002h      DATA     0         @HCCINIT0_Resent_Count (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
+     01h     0080h     00abh    002ch      DATA     0.8181    @HCCINIT0_intF (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
+     02h     0080h     00dfh    0060h      DATA     0.0833    @HCCINIT0_RF_TXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
+     03h     0080h     00dfh    0060h      DATA     0.0312    @HCCINIT0_RF_RXFIFO (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
 
      Local Sections
 
@@ -214,7 +208,7 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     0090h     0090h    0000h      LOCAL    0         _adc_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
      00h     008eh     008eh    0001h      LOCAL    9         _adc_selectChannel (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         _lvd_init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     008eh     008fh    0002h      LOCAL    51        _delay (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
+     00h     008eh     008fh    0002h      LOCAL    43        _delay (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\MAIN.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         _IIC_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
      00h     0096h     0096h    0000h      LOCAL    0         _ktd_en (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_KTD.OBJ)
      00h     0090h     0095h    0006h      LOCAL    39        _WriteI2C_Int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_I2C.OBJ)
@@ -248,12 +242,16 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     0091h     0091h    0001h      LOCAL    2         _RFGetClrRFIrq (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     0095h     0095h    0001h      LOCAL    2         _RF_Parameter_loading (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
      00h     008fh     0094h    0006h      LOCAL    4         _RFReadBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
-     00h     0094h     0094h    0000h      LOCAL    0         _app_pair_status_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     0094h     0094h    0000h      LOCAL    0         _app_eeprom_addr_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
      00h     0092h     0093h    0002h      LOCAL    3         _eepromDeviceAddrRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
      00h     0090h     0091h    0002h      LOCAL    2         _eeprom_read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0092h     0093h    0002h      LOCAL    3         _eepromDeviceAddrCpyCheck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     008eh     008fh    0002h      LOCAL    4.5       _eeprom_write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     00a0h     00abh    000ch      LOCAL    0.8333    _app (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     0092h     0092h    0000h      LOCAL    0         _eepromDeviceAddrCpyAckRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     0092h     0093h    0002h      LOCAL    3         _eepromDeviceAddrCpyRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     008eh     0093h    0006h      LOCAL    3.3333    _memcmp (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
+     00h     008eh     008fh    0002h      LOCAL    3         _eeprom_write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     0091h     0091h    0001h      LOCAL    0         _eepromDeviceAddrCpyAckWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     0091h     0092h    0002h      LOCAL    3         _eepromDeviceAddrCpyWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     00a0h     00abh    000ch      LOCAL    0.5       _app (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
      00h     008fh     008fh    0001h      LOCAL    0         _LED (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
      00h     008eh     008eh    0001h      LOCAL    1         _rgb_blink (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         _adc_getValue (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
@@ -261,15 +259,14 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     008eh     0093h    0006h      LOCAL    3.1667    _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
      00h     0091h     0091h    0001h      LOCAL    3         _lvd_mode_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
      00h     008eh     008eh    0001h      LOCAL    1         _lvd_read_select (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_ADC.OBJ)
-     00h     0095h     0096h    0002h      LOCAL    1         _KEY_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     0091h     0094h    0004h      LOCAL    3.5       _DATA_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     0093h     0094h    0002h      LOCAL    1         _KEY_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     0091h     0092h    0002h      LOCAL    3         _DATA_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         _System_deepsleep (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
      00h     0095h     0097h    0003h      LOCAL    16        _ExtendFIFO_TX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
      00h     0091h     0091h    0000h      LOCAL    0         _Extend_FIFO_Enable (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     008fh     0094h    0006h      LOCAL    5         _RFWriteBuf2 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     0095h     0097h    0003h      LOCAL    18.667    _ExtendFIFO_RX_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\RF_API.OBJ)
-     00h     0096h     0097h    0002h      LOCAL    11        _RF_Finished_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     0091h     0095h    0005h      LOCAL    0.8       _unpairSpNode (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
+     00h     0091h     0092h    0002h      LOCAL    11        _RF_Finished_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
      00h     00a0h     00a0h    0001h      LOCAL    2         _uart_int (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_UART.OBJ)
      00h     008eh     0093h    0006h      LOCAL    2.6667    _memcpy (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
      00h     008eh     008eh    0000h      LOCAL    0         @dummy4 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_GPIO.OBJ)
@@ -309,19 +306,10 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00h     0091h     0091h    0000h      LOCAL    0         _RFDisARK (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     008eh     0095h    0008h      LOCAL    1.875     _CRC16_CCITT_FALSE (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\BC3602.OBJ)
      00h     0096h     0096h    0000h      LOCAL    0         _RF_Process_Init (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     0097h     0097h    0000h      LOCAL    0         _RF_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
+     00h     0095h     0095h    0000h      LOCAL    0         _RF_Process (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         @dummy28 (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
      00h     008eh     008eh    0000h      LOCAL    0         _TB0_proc (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_RF.OBJ)
-     00h     0090h     0090h    0001h      LOCAL    4         _eepromUnpairAll (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0092h     0093h    0002h      LOCAL    3         _eepromDeviceAddrCpyRead (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0094h     009ah    0007h      LOCAL    2.7143    _app_pair_status_update (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
-     00h     0092h     0092h    0000h      LOCAL    0         _eepromPstatusCheck (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0090h     0091h    0002h      LOCAL    3         _eepromP1Write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0092h     0093h    0002h      LOCAL    3         _eepromP1Read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0090h     0090h    0001h      LOCAL    0         _eepromPstatusWrite (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     008eh     0093h    0006h      LOCAL    4.3333    _memcmp (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     0090h     0091h    0002h      LOCAL    3         _eepromP2Write (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
-     00h     0092h     0093h    0002h      LOCAL    3         _eepromP2Read (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\HAL_EEPROM.OBJ)
+     00h     0094h     0094h    0000h      LOCAL    0         _app_pair_status_check (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
      00h     0096h     0096h    0000h      LOCAL    0         _initSys (c:\users\user\documents\htk_project\qbell_doorbell_mb_v1_2_f9\Output\APP.OBJ)
 
      Indepentent Local Sections
@@ -335,181 +323,175 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
 
      Public Symbols Information
      Address            Public by Name
-     01e4h              _ADC_Value
-     00dah              _BANK0_REGS_TALBE
-     00d6h              _BANK1_REGS_TALBE
-     00ceh              _BANK2_REGS_TALBE
-     0a1ah              _BC3602_Config
-     00cch              _BC3602_SYNCWORD
-     00e6h              _BC3602_T
-     01b4h              _BC3602_pn9_dataM
-     009bh              _CBPF_REGS_TALBE
-     00e5h              _COMMON_REGS_TALBE
-     0cdch              _CRC16_CCITT_FALSE
-     154bh              _Crom2Prom
-     154ah              _Crom2PromNext
-     1106h              _DATA_Process
-     00b1h              _DM_REGS_TALBE
+     00d6h              _ADC_Value
+     00f6h              _BANK0_REGS_TALBE
+     00f2h              _BANK1_REGS_TALBE
+     00eah              _BANK2_REGS_TALBE
+     0a67h              _BC3602_Config
+     00e8h              _BC3602_SYNCWORD
+     00b9h              _BC3602_T
+     01d0h              _BC3602_pn9_dataM
+     00b7h              _CBPF_REGS_TALBE
+     0101h              _COMMON_REGS_TALBE
+     0d25h              _CRC16_CCITT_FALSE
+     14a1h              _Crom2Prom
+     14a0h              _Crom2PromNext
+     114eh              _DATA_Process
+     00cdh              _DM_REGS_TALBE
      00afh              _DeviceACK_CMD_Flag
      00ach              _DeviceACK_Flag
-     0b97h              _EntryDeepSleep
-     0b9ah              _EntryIdleMode
-     0b94h              _EntryLightSleep
+     0be0h              _EntryDeepSleep
+     0be3h              _EntryIdleMode
+     0bddh              _EntryLightSleep
      00b3h              _ExtRxLength
      00adh              _ExtTxLength
-     0e64h              _ExtendFIFO_RX_Process
-     0d61h              _ExtendFIFO_TX_Process
-     0cb1h              _Extend_FIFO_Disable
-     0c9eh              _Extend_FIFO_Enable
-     009eh              _FCF_REGS_TALBE
+     0eadh              _ExtendFIFO_RX_Process
+     0daah              _ExtendFIFO_TX_Process
+     0cfah              _Extend_FIFO_Disable
+     0ce7h              _Extend_FIFO_Enable
+     00bah              _FCF_REGS_TALBE
      00aeh              _Fg_I2c_WrRd
-     00bch              _Frequency_REGS_TALBE
+     00d8h              _Frequency_REGS_TALBE
      0020h              _IIC_Init
-     05a5h              _IIC_Start
-     05b5h              _IIC_Stop
-     0599h              _INT0_proc
-     059fh              _INT1_proc
-     00f1h              _IRQIO_REGS_TALBE
-     113ch              _KEY_Process
-     13a1h              _LED
-     0b9dh              _LircCalibration
+     05f2h              _IIC_Start
+     0602h              _IIC_Stop
+     05e4h              _INT0_proc
+     05ebh              _INT1_proc
+     010dh              _IRQIO_REGS_TALBE
+     1178h              _KEY_Process
+     130eh              _LED
+     0be6h              _LircCalibration
      00b4h              _Mflag
-     00e6h              _PACKET_REGS_TALBE
-     0b78h              _RFCalibration
-     0cd3h              _RFDisARK
-     09f8h              _RFDisATR
-     0cc2h              _RFEnARK
-     09efh              _RFEnATR
-     0b86h              _RFGetClrRFIrq
-     097eh              _RFReadBuf
-     0999h              _RFReadBuf2
-     0c99h              _RFReadRssi
+     0102h              _PACKET_REGS_TALBE
+     0bc1h              _RFCalibration
+     0d1ch              _RFDisARK
+     0a45h              _RFDisATR
+     0d0bh              _RFEnARK
+     0a3ch              _RFEnATR
+     0bcfh              _RFGetClrRFIrq
+     09cbh              _RFReadBuf
+     09e6h              _RFReadBuf2
+     0ce2h              _RFReadRssi
      0003h              _RFReadSyncword
-     0abeh              _RFSetDRPram
-     0b5ah              _RFSetPower
-     094dh              _RFWriteBuf
-     0962h              _RFWriteBuf2
-     0b2ch              _RFWriteFreq
-     0b07h              _RFWriteFreqTABLE
-     0aa9h              _RFWriteSyncword
-     0a01h              _RFXtalReady
-     0c42h              _RF_EntryRxMode
-     0c50h              _RF_EntrySniffMode
-     0c63h              _RF_EntryWOT_Mode
-     102ch              _RF_Finished_Process
-     01ebh              _RF_IRQ
-     0babh              _RF_Init
-     0d22h              _RF_Parameter_loading
-     1180h              _RF_Process
-     1026h              _RF_Process_Init
-     0280h              _RF_RXFIFO
-     0c8fh              _RF_ReadRxData
-     0c89h              _RF_ResendData
-     0be8h              _RF_RxBER
-     0c74h              _RF_SendData
-     0c39h              _RF_SetAddr
-     0c30h              _RF_SetSniffPrm
-     0184h              _RF_TXFIFO
-     0bc3h              _RF_TxCarrier
-     0c18h              _RF_WriteFreq
-     05e8h              _Rd_Byte
-     09d2h              _ReadFIFO
-     00ffh              _ReceiveData
-     01f0h              _Resent_Count
-     0a07h              _ResetLvRF
-     0b91h              _ResetRXFIFO
-     0b8eh              _ResetTXFIFO
-     01eah              _Rx_Buff
-     0fe2h              _SpiCSN_high
-     0fe0h              _SpiCSN_low
-     0fd0h              _SpiIOInti
-     0fe4h              _SpiRead
-     0941h              _SpiReadRegCMD
-     0fefh              _SpiWrite
-     0930h              _SpiWriteRegCMD
-     093bh              _SpiWriteStrobeCMD
-     100ch              _Sys_init
-     118fh              _System_deepsleep
-     1197h              _TB0_proc
-     00c0h              _TxPowerValue
-     05c2h              _Wr_Byte
-     09b7h              _WriteFIFO
-     061bh              _WriteI2C_Int
+     0b07h              _RFSetDRPram
+     0ba3h              _RFSetPower
+     099ah              _RFWriteBuf
+     09afh              _RFWriteBuf2
+     0b75h              _RFWriteFreq
+     0b50h              _RFWriteFreqTABLE
+     0af6h              _RFWriteSyncword
+     0a4eh              _RFXtalReady
+     0c8bh              _RF_EntryRxMode
+     0c99h              _RF_EntrySniffMode
+     0cach              _RF_EntryWOT_Mode
+     1075h              _RF_Finished_Process
+     00deh              _RF_IRQ
+     0bf4h              _RF_Init
+     0d6bh              _RF_Parameter_loading
+     11bch              _RF_Process
+     106fh              _RF_Process_Init
+     0380h              _RF_RXFIFO
+     0cd8h              _RF_ReadRxData
+     0cd2h              _RF_ResendData
+     0c31h              _RF_RxBER
+     0cbdh              _RF_SendData
+     0c82h              _RF_SetAddr
+     0c79h              _RF_SetSniffPrm
+     0280h              _RF_TXFIFO
+     0c0ch              _RF_TxCarrier
+     0c61h              _RF_WriteFreq
+     0635h              _Rd_Byte
+     0a1fh              _ReadFIFO
+     00dah              _ReceiveData
+     00e3h              _Resent_Count
+     0a54h              _ResetLvRF
+     0bdah              _ResetRXFIFO
+     0bd7h              _ResetTXFIFO
+     00ddh              _Rx_Buff
+     102bh              _SpiCSN_high
+     1029h              _SpiCSN_low
+     1019h              _SpiIOInti
+     102dh              _SpiRead
+     098eh              _SpiReadRegCMD
+     1038h              _SpiWrite
+     097dh              _SpiWriteRegCMD
+     0988h              _SpiWriteStrobeCMD
+     1055h              _Sys_init
+     11cch              _System_deepsleep
+     11d4h              _TB0_proc
+     00dch              _TxPowerValue
+     060fh              _Wr_Byte
+     0a04h              _WriteFIFO
+     0668h              _WriteI2C_Int
      0092h              _WriteI2C_Int_2
-     14e7h              __DELAYX0
-     14e6h              __DELAYX1
-     14e6h              __DELAYX2
-     14e5h              __DELAYX3
-     14e5h              __DELAYX4
-     14e4h              __DELAYX5
-     14e4h              __DELAYX6
-     01e6h              _a
-     03ech              _adc_getValue
-     0404h              _adc_init
-     039ah              _adc_selectChannel
-     13beh              _app
-     129bh              _app_pair_status_check
-     12a7h              _app_pair_status_update
-     149ah              _builtin_holtek_divmodhi4_isr00
-     14d1h              _builtin_holtek_mulhi3_isr00
-     14a3h              _builtin_holtek_udivmodhi4_isr00
-     0604h              _checkAck
-     02e1h              _convert_integer_to_string
+     143dh              __DELAYX0
+     143ch              __DELAYX1
+     143ch              __DELAYX2
+     143bh              __DELAYX3
+     143bh              __DELAYX4
+     143ah              __DELAYX5
+     143ah              __DELAYX6
+     00d8h              _a
+     042eh              _adc_getValue
+     0446h              _adc_init
+     03dch              _adc_selectChannel
+     132fh              _app
+     1275h              _app_eeprom_addr_check
+     1264h              _app_pair_status_check
+     13f0h              _builtin_holtek_divmodhi4_isr00
+     1427h              _builtin_holtek_mulhi3_isr00
+     13f9h              _builtin_holtek_udivmodhi4_isr00
+     0651h              _checkAck
+     0313h              _convert_integer_to_string
      0096h              _convert_integer_to_string_2
-     0363h              _delay
+     0395h              _delay
      008eh              _delay_2
-     1256h              _eepromDeviceAddrCpyCheck
-     1283h              _eepromDeviceAddrCpyRead
-     11d3h              _eepromDeviceAddrRead
-     11e5h              _eepromP1Read
-     120bh              _eepromP1Write
-     11f8h              _eepromP2Read
-     1225h              _eepromP2Write
-     123fh              _eepromPstatusCheck
-     1245h              _eepromPstatusWrite
-     124bh              _eepromUnpairAll
-     119ch              _eeprom_init
-     11b7h              _eeprom_read
-     11a0h              _eeprom_write
-     0ff9h              _fun_RamInit
-     0560h              _gpio_init
-     148bh              _initSys
-     00b9h              _intF
-     0571h              _int_init
-     0469h              _itoa
+     123ah              _eepromDeviceAddrCpyAckRead
+     1259h              _eepromDeviceAddrCpyAckWrite
+     1222h              _eepromDeviceAddrCpyRead
+     1242h              _eepromDeviceAddrCpyWrite
+     1210h              _eepromDeviceAddrRead
+     11d9h              _eeprom_init
+     11f4h              _eeprom_read
+     11ddh              _eeprom_write
+     1042h              _fun_RamInit
+     05abh              _gpio_init
+     13e1h              _initSys
+     0180h              _intF
+     05bch              _int_init
+     04b4h              _itoa
      009eh              _itoa_2
-     089ch              _ktd_anticlockwise_ring
-     064dh              _ktd_clear
-     0808h              _ktd_clockwise_ring
+     08e9h              _ktd_anticlockwise_ring
+     069ah              _ktd_clear
+     0855h              _ktd_clockwise_ring
      00a1h              _ktd_clockwise_ring_2
-     0631h              _ktd_en
-     06bah              _ktd_rgb_ctrl
-     0761h              _ktd_ring
+     067eh              _ktd_en
+     0707h              _ktd_rgb_ctrl
+     07aeh              _ktd_ring
      0015h              _lvd_init
-     041fh              _lvd_mode_select
-     0417h              _lvd_read
-     0446h              _lvd_read_select
-     0180h              _mRFSync
-     0379h              _main
+     0464h              _lvd_mode_select
+     0459h              _lvd_read
+     048bh              _lvd_read_select
+     00d2h              _mRFSync
+     03abh              _main
      0001h              _margin_len
-     1516h              _memcmp
-     14eeh              _memcpy
-     1387h              _rgb_blink
-     057ch              _rgb_led_ctrl
-     01ech              _syncword
+     146ch              _memcmp
+     1444h              _memcpy
+     12f4h              _rgb_blink
+     05c7h              _rgb_led_ctrl
+     00dfh              _syncword
      000eh              _sysInit
      00b1h              _temPtr
      00b0h              _u16_I2cError_Cnt
-     01e9h              _u8_I2c_WrRd_1ms
-     01e8h              _u8_IIC_Count
-     0544h              _uart_int
-     0512h              _uart_int_init
-     0535h              _uart_printf
+     00dch              _u8_I2c_WrRd_1ms
+     00dbh              _u8_IIC_Count
+     058fh              _uart_int
+     055dh              _uart_int_init
+     0580h              _uart_printf
      0090h              _uart_printf_2
-     0519h              _uart_prot_init
-     052fh              _uart_receive
-     0527h              _uart_send
-     136fh              _unpairSpNode
+     0564h              _uart_prot_init
+     057ah              _uart_receive
+     0572h              _uart_send
      0088h              r104
      008ch              r11c
      008ah              r124
@@ -551,9 +533,7 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      0090h              _uart_printf_2
      0092h              _WriteI2C_Int_2
      0096h              _convert_integer_to_string_2
-     009bh              _CBPF_REGS_TALBE
      009eh              _itoa_2
-     009eh              _FCF_REGS_TALBE
      00a1h              _ktd_clockwise_ring_2
      00ach              _DeviceACK_Flag
      00adh              _ExtTxLength
@@ -561,175 +541,171 @@ Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x
      00afh              _DeviceACK_CMD_Flag
      00b0h              _u16_I2cError_Cnt
      00b1h              _temPtr
-     00b1h              _DM_REGS_TALBE
      00b3h              _ExtRxLength
      00b4h              _Mflag
-     00b9h              _intF
-     00bch              _Frequency_REGS_TALBE
-     00c0h              _TxPowerValue
-     00cch              _BC3602_SYNCWORD
-     00ceh              _BANK2_REGS_TALBE
-     00d6h              _BANK1_REGS_TALBE
-     00dah              _BANK0_REGS_TALBE
-     00e5h              _COMMON_REGS_TALBE
-     00e6h              _PACKET_REGS_TALBE
-     00e6h              _BC3602_T
-     00f1h              _IRQIO_REGS_TALBE
-     00ffh              _ReceiveData
-     0180h              _mRFSync
-     0184h              _RF_TXFIFO
-     01b4h              _BC3602_pn9_dataM
-     01e4h              _ADC_Value
-     01e6h              _a
-     01e8h              _u8_IIC_Count
-     01e9h              _u8_I2c_WrRd_1ms
-     01eah              _Rx_Buff
-     01ebh              _RF_IRQ
-     01ech              _syncword
-     01f0h              _Resent_Count
-     0280h              _RF_RXFIFO
-     02e1h              _convert_integer_to_string
-     0363h              _delay
-     0379h              _main
-     039ah              _adc_selectChannel
-     03ech              _adc_getValue
-     0404h              _adc_init
-     0417h              _lvd_read
-     041fh              _lvd_mode_select
-     0446h              _lvd_read_select
-     0469h              _itoa
-     0512h              _uart_int_init
-     0519h              _uart_prot_init
-     0527h              _uart_send
-     052fh              _uart_receive
-     0535h              _uart_printf
-     0544h              _uart_int
-     0560h              _gpio_init
-     0571h              _int_init
-     057ch              _rgb_led_ctrl
-     0599h              _INT0_proc
-     059fh              _INT1_proc
-     05a5h              _IIC_Start
-     05b5h              _IIC_Stop
-     05c2h              _Wr_Byte
-     05e8h              _Rd_Byte
-     0604h              _checkAck
-     061bh              _WriteI2C_Int
-     0631h              _ktd_en
-     064dh              _ktd_clear
-     06bah              _ktd_rgb_ctrl
-     0761h              _ktd_ring
-     0808h              _ktd_clockwise_ring
-     089ch              _ktd_anticlockwise_ring
-     0930h              _SpiWriteRegCMD
-     093bh              _SpiWriteStrobeCMD
-     0941h              _SpiReadRegCMD
-     094dh              _RFWriteBuf
-     0962h              _RFWriteBuf2
-     097eh              _RFReadBuf
-     0999h              _RFReadBuf2
-     09b7h              _WriteFIFO
-     09d2h              _ReadFIFO
-     09efh              _RFEnATR
-     09f8h              _RFDisATR
-     0a01h              _RFXtalReady
-     0a07h              _ResetLvRF
-     0a1ah              _BC3602_Config
-     0aa9h              _RFWriteSyncword
-     0abeh              _RFSetDRPram
-     0b07h              _RFWriteFreqTABLE
-     0b2ch              _RFWriteFreq
-     0b5ah              _RFSetPower
-     0b78h              _RFCalibration
-     0b86h              _RFGetClrRFIrq
-     0b8eh              _ResetTXFIFO
-     0b91h              _ResetRXFIFO
-     0b94h              _EntryLightSleep
-     0b97h              _EntryDeepSleep
-     0b9ah              _EntryIdleMode
-     0b9dh              _LircCalibration
-     0babh              _RF_Init
-     0bc3h              _RF_TxCarrier
-     0be8h              _RF_RxBER
-     0c18h              _RF_WriteFreq
-     0c30h              _RF_SetSniffPrm
-     0c39h              _RF_SetAddr
-     0c42h              _RF_EntryRxMode
-     0c50h              _RF_EntrySniffMode
-     0c63h              _RF_EntryWOT_Mode
-     0c74h              _RF_SendData
-     0c89h              _RF_ResendData
-     0c8fh              _RF_ReadRxData
-     0c99h              _RFReadRssi
-     0c9eh              _Extend_FIFO_Enable
-     0cb1h              _Extend_FIFO_Disable
-     0cc2h              _RFEnARK
-     0cd3h              _RFDisARK
-     0cdch              _CRC16_CCITT_FALSE
-     0d22h              _RF_Parameter_loading
-     0d61h              _ExtendFIFO_TX_Process
-     0e64h              _ExtendFIFO_RX_Process
-     0fd0h              _SpiIOInti
-     0fe0h              _SpiCSN_low
-     0fe2h              _SpiCSN_high
-     0fe4h              _SpiRead
-     0fefh              _SpiWrite
-     0ff9h              _fun_RamInit
-     100ch              _Sys_init
-     1026h              _RF_Process_Init
-     102ch              _RF_Finished_Process
-     1106h              _DATA_Process
-     113ch              _KEY_Process
-     1180h              _RF_Process
-     118fh              _System_deepsleep
-     1197h              _TB0_proc
-     119ch              _eeprom_init
-     11a0h              _eeprom_write
-     11b7h              _eeprom_read
-     11d3h              _eepromDeviceAddrRead
-     11e5h              _eepromP1Read
-     11f8h              _eepromP2Read
-     120bh              _eepromP1Write
-     1225h              _eepromP2Write
-     123fh              _eepromPstatusCheck
-     1245h              _eepromPstatusWrite
-     124bh              _eepromUnpairAll
-     1256h              _eepromDeviceAddrCpyCheck
-     1283h              _eepromDeviceAddrCpyRead
-     129bh              _app_pair_status_check
-     12a7h              _app_pair_status_update
-     136fh              _unpairSpNode
-     1387h              _rgb_blink
-     13a1h              _LED
-     13beh              _app
-     148bh              _initSys
-     149ah              _builtin_holtek_divmodhi4_isr00
-     14a3h              _builtin_holtek_udivmodhi4_isr00
-     14d1h              _builtin_holtek_mulhi3_isr00
-     14e4h              __DELAYX5
-     14e4h              __DELAYX6
-     14e5h              __DELAYX3
-     14e5h              __DELAYX4
-     14e6h              __DELAYX1
-     14e6h              __DELAYX2
-     14e7h              __DELAYX0
-     14eeh              _memcpy
-     1516h              _memcmp
-     154ah              _Crom2PromNext
-     154bh              _Crom2Prom
+     00b7h              _CBPF_REGS_TALBE
+     00b9h              _BC3602_T
+     00bah              _FCF_REGS_TALBE
+     00cdh              _DM_REGS_TALBE
+     00d2h              _mRFSync
+     00d6h              _ADC_Value
+     00d8h              _Frequency_REGS_TALBE
+     00d8h              _a
+     00dah              _ReceiveData
+     00dbh              _u8_IIC_Count
+     00dch              _u8_I2c_WrRd_1ms
+     00dch              _TxPowerValue
+     00ddh              _Rx_Buff
+     00deh              _RF_IRQ
+     00dfh              _syncword
+     00e3h              _Resent_Count
+     00e8h              _BC3602_SYNCWORD
+     00eah              _BANK2_REGS_TALBE
+     00f2h              _BANK1_REGS_TALBE
+     00f6h              _BANK0_REGS_TALBE
+     0101h              _COMMON_REGS_TALBE
+     0102h              _PACKET_REGS_TALBE
+     010dh              _IRQIO_REGS_TALBE
+     0180h              _intF
+     01d0h              _BC3602_pn9_dataM
+     0280h              _RF_TXFIFO
+     0313h              _convert_integer_to_string
+     0380h              _RF_RXFIFO
+     0395h              _delay
+     03abh              _main
+     03dch              _adc_selectChannel
+     042eh              _adc_getValue
+     0446h              _adc_init
+     0459h              _lvd_read
+     0464h              _lvd_mode_select
+     048bh              _lvd_read_select
+     04b4h              _itoa
+     055dh              _uart_int_init
+     0564h              _uart_prot_init
+     0572h              _uart_send
+     057ah              _uart_receive
+     0580h              _uart_printf
+     058fh              _uart_int
+     05abh              _gpio_init
+     05bch              _int_init
+     05c7h              _rgb_led_ctrl
+     05e4h              _INT0_proc
+     05ebh              _INT1_proc
+     05f2h              _IIC_Start
+     0602h              _IIC_Stop
+     060fh              _Wr_Byte
+     0635h              _Rd_Byte
+     0651h              _checkAck
+     0668h              _WriteI2C_Int
+     067eh              _ktd_en
+     069ah              _ktd_clear
+     0707h              _ktd_rgb_ctrl
+     07aeh              _ktd_ring
+     0855h              _ktd_clockwise_ring
+     08e9h              _ktd_anticlockwise_ring
+     097dh              _SpiWriteRegCMD
+     0988h              _SpiWriteStrobeCMD
+     098eh              _SpiReadRegCMD
+     099ah              _RFWriteBuf
+     09afh              _RFWriteBuf2
+     09cbh              _RFReadBuf
+     09e6h              _RFReadBuf2
+     0a04h              _WriteFIFO
+     0a1fh              _ReadFIFO
+     0a3ch              _RFEnATR
+     0a45h              _RFDisATR
+     0a4eh              _RFXtalReady
+     0a54h              _ResetLvRF
+     0a67h              _BC3602_Config
+     0af6h              _RFWriteSyncword
+     0b07h              _RFSetDRPram
+     0b50h              _RFWriteFreqTABLE
+     0b75h              _RFWriteFreq
+     0ba3h              _RFSetPower
+     0bc1h              _RFCalibration
+     0bcfh              _RFGetClrRFIrq
+     0bd7h              _ResetTXFIFO
+     0bdah              _ResetRXFIFO
+     0bddh              _EntryLightSleep
+     0be0h              _EntryDeepSleep
+     0be3h              _EntryIdleMode
+     0be6h              _LircCalibration
+     0bf4h              _RF_Init
+     0c0ch              _RF_TxCarrier
+     0c31h              _RF_RxBER
+     0c61h              _RF_WriteFreq
+     0c79h              _RF_SetSniffPrm
+     0c82h              _RF_SetAddr
+     0c8bh              _RF_EntryRxMode
+     0c99h              _RF_EntrySniffMode
+     0cach              _RF_EntryWOT_Mode
+     0cbdh              _RF_SendData
+     0cd2h              _RF_ResendData
+     0cd8h              _RF_ReadRxData
+     0ce2h              _RFReadRssi
+     0ce7h              _Extend_FIFO_Enable
+     0cfah              _Extend_FIFO_Disable
+     0d0bh              _RFEnARK
+     0d1ch              _RFDisARK
+     0d25h              _CRC16_CCITT_FALSE
+     0d6bh              _RF_Parameter_loading
+     0daah              _ExtendFIFO_TX_Process
+     0eadh              _ExtendFIFO_RX_Process
+     1019h              _SpiIOInti
+     1029h              _SpiCSN_low
+     102bh              _SpiCSN_high
+     102dh              _SpiRead
+     1038h              _SpiWrite
+     1042h              _fun_RamInit
+     1055h              _Sys_init
+     106fh              _RF_Process_Init
+     1075h              _RF_Finished_Process
+     114eh              _DATA_Process
+     1178h              _KEY_Process
+     11bch              _RF_Process
+     11cch              _System_deepsleep
+     11d4h              _TB0_proc
+     11d9h              _eeprom_init
+     11ddh              _eeprom_write
+     11f4h              _eeprom_read
+     1210h              _eepromDeviceAddrRead
+     1222h              _eepromDeviceAddrCpyRead
+     123ah              _eepromDeviceAddrCpyAckRead
+     1242h              _eepromDeviceAddrCpyWrite
+     1259h              _eepromDeviceAddrCpyAckWrite
+     1264h              _app_pair_status_check
+     1275h              _app_eeprom_addr_check
+     12f4h              _rgb_blink
+     130eh              _LED
+     132fh              _app
+     13e1h              _initSys
+     13f0h              _builtin_holtek_divmodhi4_isr00
+     13f9h              _builtin_holtek_udivmodhi4_isr00
+     1427h              _builtin_holtek_mulhi3_isr00
+     143ah              __DELAYX5
+     143ah              __DELAYX6
+     143bh              __DELAYX3
+     143bh              __DELAYX4
+     143ch              __DELAYX1
+     143ch              __DELAYX2
+     143dh              __DELAYX0
+     1444h              _memcpy
+     146ch              _memcmp
+     14a0h              _Crom2PromNext
+     14a1h              _Crom2Prom
 
 
 ROM Usage Statistics
      Size      Used     Percentage
-     2000h     1559h    66%
+     2000h     14afh    64%
 
 RAM Usage Statistics
     Bank      Size      Used     Percentage
-     00h       0080h     0080h    100%
-     01h       0080h     0072h    89%
+     00h       0080h     0065h    78%
+     01h       0080h     002ch    34%
      02h       0080h     0060h    75%
-     03h       0080h     0000h    0%
-     Total     0200h     0152h    66%
+     03h       0080h     0060h    75%
+     Total     0200h     0151h    65%
 
 Use Stack Count
 _convert_integer_to_string: 2
@@ -767,9 +743,7 @@ _CRC16_CCITT_FALSE: 1
 _RF_Process_Init: 4
 _RF_Process: 4
 _TB0_proc: 0
-_eepromUnpairAll: 1
-_eepromDeviceAddrCpyRead: 2
-_app_pair_status_update: 3
+_app_pair_status_check: 3
 _initSys: 5
 
 Call Tree
@@ -934,20 +908,35 @@ Call Tree
                 _uart_send (2)
                 _Crom2Prom (2)
             _delay (1)
-            _app_pair_status_check (1)
+            _app_eeprom_addr_check (1)
                 _uart_printf (2)
                     _uart_send (3)
                     _Crom2Prom (3)
                 _eepromDeviceAddrRead (2)
                     _eeprom_read (3)
                         _delay (4)
-                _delay (2)
-                _eepromDeviceAddrCpyCheck (2)
+                _eepromDeviceAddrCpyAckRead (2)
                     _eeprom_read (3)
                         _delay (4)
+                _uart_send (2)
+                _eepromDeviceAddrCpyRead (2)
+                    _eeprom_read (3)
+                        _delay (4)
+                    _uart_printf (3)
+                        _uart_send (4)
+                        _Crom2Prom (4)
+                _memcmp (2)
+                    _Crom2Prom (3)
+                _eeprom_write (2)
+                _delay (2)
+                _eepromDeviceAddrCpyAckWrite (2)
+                    _eeprom_write (3)
+                    _uart_printf (3)
+                        _uart_send (4)
+                        _Crom2Prom (4)
+                _eepromDeviceAddrCpyWrite (2)
                     _Crom2Prom (3)
                     _eeprom_write (3)
-                    _delay (3)
                     _uart_printf (3)
                         _uart_send (4)
                         _Crom2Prom (4)
@@ -1035,10 +1024,7 @@ Call Tree
                     _uart_printf (3)
                         _uart_send (4)
                         _Crom2Prom (4)
-                    _unpairSpNode (3)
-                        _uart_printf (4)
-                            _uart_send (5)
-                            _Crom2Prom (5)
+            _rgb_blink (1)
     _uart_int
         _memcpy (0)
             _Crom2Prom (1)
@@ -1563,38 +1549,11 @@ Call Tree
                 _Crom2Prom (2)
     @dummy28
         _TB0_proc (0)
-    _eepromUnpairAll
-        _eeprom_write (0)
-    _eepromDeviceAddrCpyRead
-        _eeprom_read (0)
-            _delay (1)
+    _app_pair_status_check
         _uart_printf (0)
             _uart_send (1)
             _Crom2Prom (1)
-    _app_pair_status_update
-        _uart_printf (0)
-            _uart_send (1)
-            _Crom2Prom (1)
-        _eepromPstatusCheck (0)
-            _eeprom_read (1)
-                _delay (2)
-        _delay (0)
-        _eepromP1Write (0)
-            _Crom2Prom (1)
-            _eeprom_write (1)
-        _eepromP1Read (0)
-            _eeprom_read (1)
-                _delay (2)
-        _eepromPstatusWrite (0)
-            _eeprom_write (1)
-        _Crom2Prom (0)
-        _uart_send (0)
-        _memcmp (0)
-            _Crom2Prom (1)
-        _eepromP2Write (0)
-            _Crom2Prom (1)
-            _eeprom_write (1)
-        _eepromP2Read (0)
+        _eepromDeviceAddrRead (0)
             _eeprom_read (1)
                 _delay (2)
     _initSys

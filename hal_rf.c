@@ -8,7 +8,7 @@ extern int_flags intF;
 
 const unsigned char BC3602_pn9_dataM[5] = 
 {
-	48,1,1,4,8
+	48,1,1,8,8
 };
 
 void Sys_init(void)
@@ -228,7 +228,7 @@ void RF_Finished_Process(_BC3602_device_ *BC3602_T)
 
 			case UNPAIR_REQ:
 				uart_printf("Unpairing Request Received: ");
-				unpairSpNode();
+				//unpairSpNode();
 				intF.pairingAck = 1;
 				break;
 
@@ -271,13 +271,13 @@ void DATA_Process(unsigned char *FIFO)
 		#if !MODE_FLASHING
 		FIFO++;
 		*FIFO = intF.deviceID[x];
-		uart_printf(intF.deviceID[x]);
+//		uart_printf(intF.deviceID[x]);
 		#endif
 
 		#if MODE_FLASHING
 		FIFO++;
 		*FIFO = BC3602_pn9_dataM[x];
-		uart_send(BC3602_pn9_dataM[x]);
+	//	uart_send(BC3602_pn9_dataM[x]);
 		#endif
 	}
 	uart_printf("\n");
