@@ -128,7 +128,7 @@ void app()
         delay(1);
         lvd_read_select(MODE_3V0);
         delay(1);
-
+#if 0
         if(1 == intF.mode3V3F)
         {
             if(1 == intF.mode3V0F)
@@ -173,6 +173,34 @@ void app()
                 uart_printf("undefined Battery Value\n");
             }
         }
+#endif
+
+
+//here I have changed the battery level measurement
+#if 1
+        if(adcBattValue > ADC_BATT_LEVEL_2)
+        {
+            intF.battStatus = BATT_FULL;
+            uart_printf("Full Battery\n");
+        }
+
+        else
+        {
+            if(1 == intF.mode3V3F)
+            {
+                if(1 == intF.mode3V0F)
+                {
+                    intF.battStatus = BATT_LOW;
+                    uart_printf("Low Battery Voltage\n");
+                }   
+                else
+                {
+                    intF.battStatus = BATT_AVG;
+                    uart_printf("Average Battery Voltage\n");
+                }         
+            }
+        }
+#endif
         // while(!WAKEUP_PIN);
         KEY_Process(NOTIFI_REQ, BATT_FULL);
         delay(20);
@@ -256,6 +284,11 @@ void LED(u8 mode)
     case NOTIFI_MODE:
         rgb_blink(RED);
         break;
+    
+    case ERROR_MODE:
+        rgb_blink(RED);
+        break;
+        
     default:
         break;
     }

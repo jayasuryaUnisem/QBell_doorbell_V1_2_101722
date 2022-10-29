@@ -1,0 +1,199 @@
+"File: BCH32.asm     Assembler  Version 2.98      Page 1
+
+
+   1  0000              #DEFINE		RF_SYNC_BCHcoding		0
+   2  0000              
+   3  0000              IF RF_SYNC_BCHcoding
+   4  0000              ;============================================================================
+   5  0000              INCLUDE		MCU.inc
+   6  0000              INCLUDE		MACRO.inc
+   7  0000              INCLUDE		BCH32.inc
+   8  0000              
+   9  0000              ;============================================================================
+  10  0000              BCH_DATA		.SECTION	'DATA'
+  11  0000              _mLap			DB	4 dup(?)
+  12  0000              mAA				DB	4 dup(?)
+  13  0000              mGG				DB	4 dup(?)
+  14  0000              mTmp			DB	4 dup(?)
+  15  0000              mLpCnt			DB	?
+  16  0000              mLpCntTmp		DB	?
+  17  0000              mMask			DB	?
+  18  0000              
+  19  0000              
+  20  0000              ;========================================================
+  21  0000              EXTERN	_mRFSync	:BYTE		;4-byte
+  22  0000              PUBLIC	_mLap				;4-byte
+  23  0000              
+  24  0000              ;--------------------------------------------------------
+  25  0000              PUBLIC	_BCH32_Syncword		;stack = 1, Input : _mLap[3:0], Output : mRFSync[3:0]	
+  26  0000              
+  27  0000              
+  28  0000              ;============================================================================
+  29  0000              BCH_CODE		.SECTION	PARA	'CODE'
+  30  0000              
+  31  0000              ;--------------------------------------------------------
+  32  0000              RvsBitValue		PROC
+  33  0000              				ADDM	A,PCL
+  34  0000              				RET		A,80h
+  35  0000              				RET		A,40h
+  36  0000              				RET		A,20h
+  37  0000              				RET		A,10h
+  38  0000              				RET		A,08h
+  39  0000              				RET		A,04h
+  40  0000              				RET		A,02h
+  41  0000              				RET		A,01h
+  42  0000              RvsBitValue		ENDP
+  43  0000              
+  44  0000              ;--------------------------------------------------------
+  45  0000              ShiftRightGG	PROC
+  46  0000              				CLR		C
+  47  0000              				RRC		mGG[3]
+  48  0000              				RRC		mGG[2]
+  49  0000              				RRC		mGG[1]
+  50  0000              				RRC		mGG[0]
+  51  0000              				RET
+  52  0000              ShiftRightGG	ENDP
+  53  0000              
+  54  0000              ;--------------------------------------------------------
+  55  0000              ShiftLeftAA		PROC
+  56  0000              				m_MOV	mLpCntTmp,BCH_32_N-BCH_32_K
+  57  0000              	sla_lp:				
+  58  0000              				CLR		C
+  59  0000              				RLC		mAA[0]
+"File: BCH32.asm     Assembler  Version 2.98      Page 2
+
+  60  0000              				RLC		mAA[1]
+  61  0000              				RLC		mAA[2]
+  62  0000              				RLC		mAA[3]
+  63  0000              				SDZ		mLpCntTmp
+  64  0000              				JMP		sla_lp
+  65  0000              				RET
+  66  0000              ShiftLeftAA		ENDP
+  67  0000              
+  68  0000              ;--------------------------------------------------------
+  69  0000              ;Input  : _mLap[3:0]
+  70  0000              ;Output : mRFSync[3:0]
+  71  0000              ;Stack = 1
+  72  0000              ;--------------------------------------------------------
+  73  0000              _BCH32_Syncword	PROC
+  74  0000              				m_AND	_mLap[0],LOW LAP_MASK
+  75  0000              				m_AND	_mLap[1],LOW (LAP_MASK>>8)
+  76  0000              				m_AND	_mLap[2],LOW (LAP_MASK>>16)
+  77  0000              				m_AND	_mLap[3],LOW (LAP_MASK>>24)
+  78  0000              				
+  79  0000              				MOV		A,LAP_BIT_MASK
+  80  0000              				AND		A,_mLap[0]
+  81  0000              				SNZ		Z
+  82  0000              				JMP		bs_1
+  83  0000              				MOV		A,LOW (LAP_BIT_MASK>>8)
+  84  0000              				AND		A,_mLap[1]
+  85  0000              				SNZ		Z
+  86  0000              				JMP		bs_1
+  87  0000              				MOV		A,LOW (LAP_BIT_MASK>>16)
+  88  0000              				AND		A,_mLap[2]
+  89  0000              				SNZ		Z
+  90  0000              				JMP		bs_1
+  91  0000              				MOV		A,LOW (LAP_BIT_MASK>>24)
+  92  0000              				AND		A,_mLap[2]
+  93  0000              				SZ		Z
+  94  0000              				JMP		bs_0
+  95  0000              				
+  96  0000              	bs_1:
+  97  0000              				m_OR	_mLap[0],LOW BARKER_PAD1
+  98  0000              				m_OR	_mLap[1],LOW (BARKER_PAD1>>8)
+  99  0000              				m_OR	_mLap[2],LOW (BARKER_PAD1>>16)
+ 100  0000              				m_OR	_mLap[3],LOW (BARKER_PAD1>>24)
+ 101  0000              				JMP		bs_01				
+ 102  0000              
+ 103  0000              	bs_0:
+ 104  0000              				m_OR	_mLap[0],LOW (BARKER_PAD0)
+ 105  0000              				m_OR	_mLap[1],LOW (BARKER_PAD0>>8)
+ 106  0000              				m_OR	_mLap[2],LOW (BARKER_PAD0>>16)
+ 107  0000              				m_OR	_mLap[3],LOW (BARKER_PAD0>>24)
+ 108  0000              	
+ 109  0000              	bs_01:
+ 110  0000              	
+ 111  0000              				m_MOV	mAA[0],_mLap[0]
+ 112  0000              				m_MOV	mAA[1],_mLap[1]
+ 113  0000              				m_MOV	mAA[2],_mLap[2]
+ 114  0000              				m_MOV	mAA[3],_mLap[3]
+ 115  0000              				
+ 116  0000              				CALL	ShiftLeftAA
+ 117  0000              				
+ 118  0000              				m_MOV	mGG[0],G_32_L0
+ 119  0000              				m_MOV	mGG[1],G_32_L1
+"File: BCH32.asm     Assembler  Version 2.98      Page 3
+
+ 120  0000              				m_MOV	mGG[2],G_32_L2
+ 121  0000              				m_MOV	mGG[3],G_32_L3
+ 122  0000              				
+ 123  0000              				MOV		A,P_32_L0
+ 124  0000              				XOR		A,mAA[0]
+ 125  0000              				AND		A,0C0h
+ 126  0000              				MOV		mTmp[0],A
+ 127  0000              				
+ 128  0000              				MOV		A,P_32_L1
+ 129  0000              				XOR		A,mAA[1]
+ 130  0000              				MOV		mTmp[1],A
+ 131  0000              				
+ 132  0000              				MOV		A,P_32_L2
+ 133  0000              				XOR		A,mAA[2]
+ 134  0000              				MOV		mTmp[2],A
+ 135  0000              				
+ 136  0000              				MOV		A,P_32_L3
+ 137  0000              				XOR		A,mAA[3]
+ 138  0000              				MOV		mTmp[3],A
+ 139  0000              				
+ 140  0000              				CLR		mLpCnt
+ 141  0000              	bs_Lp:
+ 142  0000              				MOV		A,07h
+ 143  0000              				AND		A,mLpCnt
+ 144  0000              				CALL	RvsBitValue			;stack=1+0
+ 145  0000              				MOV		mMask,A
+ 146  0000              				
+ 147  0000              				RRA		mLpCnt
+ 148  0000              				RR		ACC
+ 149  0000              				RR		ACC
+ 150  0000              				AND		A,1Fh
+ 151  0000              				CPL		ACC
+ 152  0000              				ADD		A,(OFFSET mTmp[0])+4
+ 153  0000              				MOV		MP0,A
+ 154  0000              				MOV		A,IAR0
+ 155  0000              				AND		A,mMask
+ 156  0000              				SZ		Z
+ 157  0000              				JMP		$01
+ 158  0000              				m_XOR	mTmp[0],mGG[0]
+ 159  0000              				m_XOR	mTmp[1],mGG[1]
+ 160  0000              				m_XOR	mTmp[2],mGG[2]
+ 161  0000              				m_XOR	mTmp[3],mGG[3]
+ 162  0000              				
+ 163  0000              		$01:
+ 164  0000              				CALL	ShiftRightGG		;stack=1+0
+ 165  0000              				INC		mLpCnt
+ 166  0000              				MOV		A,mLpCnt
+ 167  0000              				XOR		A,BCH_32_K
+ 168  0000              				SNZ		Z
+ 169  0000              				JMP		bs_Lp				
+ 170  0000              				
+ 171  0000              				m_XOR	mTmp[0],P_32_L0
+ 172  0000              				m_AND	mTmp[0],03Fh
+ 173  0000              				m_AND	mAA[0],0C0h
+ 174  0000              				m_OR	mTmp[0],mAA[0]	
+ 175  0000              				
+ 176  0000              				m_MOV	mTmp[1],mAA[1]
+ 177  0000              				m_MOV	mTmp[2],mAA[2]
+ 178  0000              				m_MOV	mTmp[3],mAA[3]
+ 179  0000              					
+"File: BCH32.asm     Assembler  Version 2.98      Page 4
+
+ 180  0000              				m_MOV	_mRFSync[0],mTmp[3]
+ 181  0000              				m_MOV	_mRFSync[1],mTmp[2]
+ 182  0000              				m_MOV	_mRFSync[2],mTmp[1]
+ 183  0000              				m_MOV	_mRFSync[3],mTmp[0]
+ 184  0000              				RET
+ 185  0000              _BCH32_Syncword	ENDP
+ 186  0000              
+ 187  0000              ENDIF
+
+
+        0 Errors, 0 Warnings

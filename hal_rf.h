@@ -15,7 +15,7 @@
 #define PAIR_CONF_REQ                                   0x04
 #define UNPAIR_CONF_REQ                                 0x05
 
-#define MODE_FLASHING                                   0  //0 for E-Writer //1 for E-Link
+#define MODE_FLASHING                                   0 //0 for E-Writer //1 for E-Link
 
 
 extern void Sys_init(void);
